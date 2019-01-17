@@ -15,11 +15,16 @@ service: serverless-enterprise # NOTE: update this with your service name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
-# frameworkVersion: "=X.X.X"
+frameworkVersion: ">=1.3.7"
 
 provider:
   name: aws
   runtime: nodejs8.10
+app: appname # NOTE: change this to your Serverless Enterprise app name
+tenant: tenantname # NOTE: change this to your Serverless Enterprise tenant name
+
+plugins:
+  - '@serverless/enterprise-plugin'
 
 # you can overwrite defaults here
 #  stage: dev
@@ -61,10 +66,10 @@ functions:
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-#    events:
-#      - http:
-#          path: users/create
-#          method: get
+    events:
+      - http:
+          path: hello
+          method: get
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic
