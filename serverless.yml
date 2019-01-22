@@ -12,16 +12,16 @@
 # Happy Coding!
 
 service: serverless-enterprise # NOTE: update this with your service name
+app: appname # NOTE: change this to your Serverless Enterprise app name
+tenant: tenantname # NOTE: change this to your Serverless Enterprise tenant name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
-frameworkVersion: ">=1.3.7"
+frameworkVersion: ">=1.36.2"
 
 provider:
   name: aws
   runtime: nodejs8.10
-app: appname # NOTE: change this to your Serverless Enterprise app name
-tenant: tenantname # NOTE: change this to your Serverless Enterprise tenant name
 
 plugins:
   - '@serverless/enterprise-plugin'
