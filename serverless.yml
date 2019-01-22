@@ -11,9 +11,9 @@
 #
 # Happy Coding!
 
-service: serverless-enterprise # NOTE: update this with your service name
-app: appname # NOTE: change this to your Serverless Enterprise app name
 tenant: tenantname # NOTE: change this to your Serverless Enterprise tenant name
+app: appname # NOTE: change this to your Serverless Enterprise app name
+service: serverless-enterprise # NOTE: optionally update this with your service name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
