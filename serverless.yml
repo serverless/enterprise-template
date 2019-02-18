@@ -17,7 +17,7 @@ service: serverless-enterprise # NOTE: optionally update this with your service 
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
-frameworkVersion: ">=1.36.2"
+frameworkVersion: ">=1.37.1"
 
 provider:
   name: aws
