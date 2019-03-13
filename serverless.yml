@@ -19,12 +19,12 @@ service: serverless-enterprise # NOTE: optionally update this with your service 
 # Check out our docs for more details
 frameworkVersion: ">=1.37.1"
 
+plugins:
+  - '@serverless/enterprise-plugin'
+
 provider:
   name: aws
   runtime: nodejs8.10
-
-plugins:
-  - '@serverless/enterprise-plugin'
 
 # you can overwrite defaults here
 #  stage: dev
