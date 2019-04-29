@@ -3,7 +3,7 @@
 module.exports.hello = async (event, context) => {
   let body;
   if (event.body) {
-    body = JSON.parse(body);
+    body = JSON.parse(event.body);
   }
   return {
     statusCode: 200,
