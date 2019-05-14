@@ -19,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/serverless/enterprise-template/issues"
   },
-  "homepage": "https://github.com/serverless/enterprise-template#readme",
-  "devDependencies": {
-    "@serverless/enterprise-plugin": "latest"
-  }
+  "homepage": "https://github.com/serverless/enterprise-template#readme"
 }
