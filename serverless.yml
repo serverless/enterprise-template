@@ -21,7 +21,7 @@ frameworkVersion: ">=1.44.0"
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
 
 # you can overwrite defaults here
 #  stage: dev
@@ -59,7 +59,7 @@ provider:
 functions:
   hello:
     handler: handler.hello
-    
+
     events:
       - http:
           path: hello
